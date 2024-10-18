@@ -6,7 +6,7 @@
     import { toggleMode } from "mode-watcher";
 </script>
 
-<nav class="bg-accent px-4">
+<nav class="bg-accent px-4 border-b border-secondary mb-2">
     <div class="container max-w-6xl mx-auto py-1 sm:py-2 flex flex-wrap items-center justify-center sm:justify-between">
         <a href="/" class="flex items-center justify-center sm:justify-start space-x-3">
             <span class="self-center text-3xl text-primary font-semibold whitespace-nowrap">{title}</span>
@@ -14,7 +14,7 @@
         <div class="w-full sm:w-auto mt-1 sm:mt-0">
             <ul class="font-medium flex flex-wrap justify-center sm:justify-end p-0 rounded-lg space-x-4 sm:space-x-8">
                 {#each [
-                    { href: "/home", label: "Home" },
+                    { href: "/", label: "Home" },
                     { href: "/about", label: "About" },
                     { href: "/cv", label: "CV" },
                     { href: "/nerd", label: "Nerd stuff" },
